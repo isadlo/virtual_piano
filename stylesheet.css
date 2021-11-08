@@ -1,0 +1,42 @@
+body {
+    background-color: #ffddcc;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+}
+.white-keys kbd {
+    display: inline-block;
+    background-color: white;
+    border: 2px solid gray;
+    height:200px;
+    width: 60px;
+    position: relative;
+    z-index: 0;
+    margin-left: -6px;
+    text-align: center;
+    line-height: 26;
+}
+
+.black-keys kbd {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 120px;
+    width: 36px;
+    z-index: 1;
+    line-height: 13;
+    position: relative;
+    left: -112%;
+}
+.black-keys  kbd + kbd {
+    margin-left: 24px;
+}
+.blackE + .blackT {
+    margin-left: 85px;
+}

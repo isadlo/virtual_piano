@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Virtual Piano</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<div class="container">
+<div class="white-keys">
+<kbd>A</kbd>
+<kbd>S</kbd>
+<kbd>D</kbd>
+<kbd>F</kbd>
+<kbd>G</kbd>
+<kbd>H</kbd>
+<kbd>J</kbd>
+</div>
+<div class="black-keys">
+    <kbd class="blackW">W</kbd>
+    <kbd class="blackE">E</kbd>
+    <kbd class="blackT">T</kbd>
+    <kbd class="blackY">Y</kbd>
+    <kbd class="blackU">U</kbd>
+</div>
+</div>
+<script>
+    document.addEventListener("keypress", function (event) {
+        if (event.code === "KeyA") {
+            let audio = new Audio("keysWhite/A.mp3");
+            audio.play();
+        } else if (event.code === "KeyS") {
+            let audio = new Audio("keysWhite/S.mp3");
+            audio.play();
+        } else if (event.code === "KeyD") {
+            let audio = new Audio("keysWhite/D.mp3");
+            audio.play();
+        } else if (event.code === "KeyF"){
+            let audio = new Audio("keysWhite/F.mp3");
+            audio.play();
+        } else if (event.code === "KeyG") {
+            let audio = new Audio("keysWhite/G.mp3");
+            audio.play();
+        } else if (event.code === "KeyH") {
+            let audio = new Audio("keysWhite/H.mp3");
+            audio.play();
+        } else if (event.code === "KeyJ") {
+            let audio = new Audio("keysWhite/F.mp3");
+            audio.play();
+        } else {
+            console.log("Ups wrong key is pressed");
+        }
+    })
+    document.addEventListener("keypress", function (event) {
+            if (event.code === "KeyW") {
+                let audio2 = new Audio("keysBlack/W.mp3");
+                audio2.play();
+            } else if (event.code === "KeyE") {
+                let audio2 = new Audio("keysBlack/E.mp3");
+                audio2.play();
+            } else if (event.code === "KeyT") {
+                let audio2 = new Audio("keysBlack/T.mp3");
+                audio2.play();
+            } else if (event.code === "KeyY") {
+                let audio2 = new Audio("keysBlack/Y.mp3");
+                audio2.play();
+            } else if (event.code === "KeyU") {
+                let audio2 = new Audio("keysBlack/U.mp3");
+                audio2.play();
+            } else {
+                console.log("Ups wrong key is pressed");
+            }
+        }
+    )
+</script>
+</body>
+</html>
